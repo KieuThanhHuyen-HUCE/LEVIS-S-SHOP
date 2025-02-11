@@ -1,6 +1,6 @@
 
 $("#header").load("/partials/header.html", function () {
-    // Mobile nav bên trái 
+///////// Mobile nav bên trái 
     //show
     $(".nav__bars-btn .ti-close").hide()
     $(".nav__bars-btn .ti-menu").click(function () {
@@ -33,11 +33,9 @@ $(document).ready(function () {
             $("#subMenu").hide(); 
         } else {
             $(".subMenu__body").hide(); 
-            $(menuId).show(); // Hiển thị submenu tương ứng
-            $("#subMenu").show(); // Hiển thị modal chứa submenu
+            $(menuId).show(); 
+            $("#subMenu").show(); 
         }
-
-
     });
 
     // Đóng submenu khi click ra ngoài
