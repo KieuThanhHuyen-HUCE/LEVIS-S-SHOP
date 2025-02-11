@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order</title>
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <!-- ĐỂ LINK FILE CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/pages/track-order-page.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div class="heading-track-order">
+            <h2 class="">TRACK YOUR ORDER</h2>
+        </div>
+        <div class="TrackOder-wrap">
+            <div class="box-order">
+                <input class="box-order-input" type="text" placeholder="Enter your Order ID">
+                <div class="icon-text">
+                    <span class="text-and">and</span>
+                </div>
+            </div>
+            <div class="box-order">
+                <input class="box-order-input" type="text" placeholder="Enter your Email id">
+                <div class="icon-text">
+                    <span class="text-and">and</span>
+                </div>
+            </div>
+            <div class="box-order">
+                <input class="box-order-input" type="text" placeholder="Enter your Mobile No">
+                <div class="icon-text">
+                    <span class="text-and">and</span>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn-wrap">
+            <button class="btn btn--primary">Track Order</button>
+        </a>
+    </div>
+    <div id="footer"></div>
+    <!-- JavaScript để load header -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("header").innerHTML = data;
+                })
+                .catch(error => console.error("Error loading header:", error));
+        });
+    </script>
+</body>
+
+</html>

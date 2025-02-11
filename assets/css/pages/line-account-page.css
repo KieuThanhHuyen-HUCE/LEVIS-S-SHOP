@@ -1,0 +1,33 @@
+.list-profile{
+    list-style: none;
+    padding: 0 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.list-item svg{
+    width: 16px;
+    height: 16px;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.name svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+#container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+/* ddang sai  */
+.logo a{
+    border: 5px solid var(--border-color);
+    border-radius: 50%;
+
+}

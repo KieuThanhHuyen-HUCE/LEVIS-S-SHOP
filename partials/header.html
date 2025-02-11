@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <script src="/assets/js//vendor/jquery-3.7.1.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png"
+        href="//levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=600" />
+    <title>Index</title>
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+    <!-- link CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ĐỂ LINK FILE CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/components/header-footer.css">
+    <link rel="stylesheet" href="/assets/css/components/mobile-nav.css">
+    <link rel="stylesheet" href="/assets/css/components/sub-menu.css">
+    <link rel="stylesheet" href="/assets/css/components/detail-notify.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <!-- Header có 2 phần là -->
+        <!-- BEGIN HEADER NAVBAR -->
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar-item-link">Find A Store</a>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="../pages/track-order-page.html" class="header__navbar-item-link">Track Order</a>
+                </li>
+            </ul>
+            <!-- BEGIN SLIDER HEADER -->
+            <div class="header-slider">
+                <div class="slider-item">
+                    <p>24H shopping, 14 days free return </p>
+                    <span class="slider-item__detail" id="openDetails" style="cursor: pointer;">Details</span>
+                    <!--BEGIN Details block -->
+                    <div id="details">
+                        <div class="details__overlay"></div>
+                        <div class="details__body">
+                            <i class="icon ti-close" id="closeDetails"></i>
+                            <div class="detail-info-block">
+                                <span>Details</span>
+                                <h2>24 Hours shopping, 14 days free return*. Free delivery all orders**</h2>
+                                <ul>
+                                    <li>14 days free return from the date received.</li>
+                                    <li>Free delivery for all orders for specific period. Terms and conditions may
+                                        change without prior
+                                        notification.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END Details block -->
+                </div>
+            </div>
+            <!-- END SLIDER HEADER -->
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                    <a href="" class="header__navbar-item-link">Red Tab™ Program</a>
+                </li>
+                <li class="header__navbar-item" id="open-userSignup">
+                    <span class="header__navbar-item-link header__navbar-item-link--bold">Log
+                        In/SignUp</span>
+                </li>
+                <!-- sau khi đăng nhập thành công  -->
+                <!-- <li class="header__navbar-item header__navbar-user">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 448 512"
+                                  class="header__navbar-user-avatar"
+                                >
+                                  <path
+                                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"
+                                  />
+                                </svg>
+                                <span class="header__navbar-user-name">Kiều Thanh Huyền</span>
+                              </li> -->
+            </ul>
+        </nav>
+        <!-- END HEADER NAVBAR -->
+        <!-- BEGIN HEADER SEARCH -->
+        <nav class="header-search">
+            <!-- bên trái  -->
+            <!-- BEGIN MOBILE NAV -->
+            <div class="nav__bars-btn">
+                <i class="icon ti-menu"></i>
+                <i class="icon ti-close "></i>
+            </div>
+            <div class="modal modal1" id="navMobile">
+                <div class="modal__overlay modal__overlay1"></div>
+                <div class="menu__nav">
+                    <!-- nav bên trái cho mobile -->
+                    <div class="user-login">
+                        <i class="user-login__icon fa-regular fa-user"></i>
+                        <a href="" class="user-login__signup">LOG IN / SIGN UP</a>
+                    </div>
+                    <div class="menu__nav-list-item">
+                        <ul class="highlight-menu">
+                            <li class="highlight__item">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                    </svg>
+                                </div>
+                                <span>New Arrival</span>
+                            </li>
+                            <li class="highlight__item">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                    </svg>
+                                </div>
+                                <span>Collection & <br />
+                                    Collabs</span>
+                            </li>
+                            <li class="highlight__item">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                    </svg>
+                                </div>
+                                <span>Red Tab™ <br />Program</span>
+                            </li>
+                        </ul>
+                        <ul class="list-item">
+                            <li class="item">
+                                <a href="">MEN</a>
+                                <i class="icon ti-angle-right"></i>
+                            </li>
+                            <li class="item">
+                                <a href="">WOMEN</a>
+                                <i class="icon ti-angle-right"></i>
+                            </li>
+                            <li class="item">
+                                <a href="">ACCESSORIES</a>
+                                <i class="icon ti-angle-right"></i>
+                            </li>
+                            <li class="item">
+                                <a href="">DISCOVER</a>
+                                <i class="icon ti-angle-right"></i>
+                            </li>
+                            <li class="item">
+                                <a href="">SALE</a>
+                                <i class="icon ti-angle-right"></i>
+                            </li>
+                            <li class="item">
+                                <a href="">Red Tab<sup>™</sup> Program</a>
+                                <i class="icon ti-angle-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="nav__mobile-footer">
+                        <ul class="nav__mobile-footer-inner">
+                            <li class="footer-inner">
+                                <a href="" class="footer-inner-link">Find A Store</a>
+                            </li>
+                            <li class="footer-inner">
+                                <a href="TrackOrder.html" class="footer-inner-link">Track Order</a>
+                            </li>
+                            <li class="footer-inner">
+                                <a href="" class="footer-inner-link">Help</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- END MOBILE NAV -->
+            <!-- bên trái -->
+            <ul class="search__left">
+                <a href="/index.html">
+                    <img src="//levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=600"
+                        alt=" Levi's" srcset="
+                                     //levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=80   80w,
+                                     //levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=120 120w,
+                                     //levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=160 160w
+                                   " width="80" height="33.246753246753244" loading="eager" class="header__logo-img"
+                        sizes="(max-width: 160px) 50vw, 80px" />
+                </a>
+                <li class="header__search-item" data-menu="men">MEN</li>
+                <li class="header__search-item" data-menu="women">WOMEN</li>
+                <li class="header__search-item" data-menu="accessories">ACCESSORIES</li>
+                <li class="header__search-item" data-menu="discover">DISCOVER</li>
+                <div class="modal" id="subMenu">
+                    <div class="modal__overlay"></div>
+                    <div class="SubMenu">
+                        <!-- PHẦN HEADER K ĐỔI -->
+                        <div class="subMenu__header">
+                            <ul class="header__search-list">
+                                <a href="../pages/../index.html">
+                                    <img src="//levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=600"
+                                        alt=" Levi's" srcset="
+                                      //levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=80   80w,
+                                      //levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=120 120w,
+                                      //levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=160 160w
+                                    " width="80" height="33.246753246753244" loading="eager" class="header__logo-img"
+                                        sizes="(max-width: 160px) 50vw, 80px" />
+                                </a>
+                                <li class="header__search-item" data-menu="men">MEN</li>
+                                <li class="header__search-item" data-menu="women">WOMEN</li>
+                                <li class="header__search-item" data-menu="accessories">ACCESSORIES</li>
+                                <li class="header__search-item" data-menu="discover">DISCOVER</li>
+                            </ul>
+                            <!-- ICON ĐÓNG TAB -->
+                            <div class="close-wrap">
+                                <i class=" icon-close ti-close"></i>
+                            </div>
+                        </div>
+                        <!-- gọi vào từng menu  -->
+                        <div class="subMenu__body" id="menMenu">
+                            <!-- PHẦN HIGHLIGHT-->
+                            <ul class="highlight-sub-menu">
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                        </svg>
+                                        <h3>Men's New Arrival</h3>
+                                    </a>
+                                </li>
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
+                                        </svg>
+                                        <h3>Men's Bestsellers</h3>
+                                    </a>
+                                </li>
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                        </svg>
+                                        <h3>Collection & Collabs</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="sub-menu-containner grid wide">
+                                <div class="row">
+                                    <div class="col l-4 column-left">
+                                        <div class="sub-menu-block">
+                                            <h5 class="name-product-block">MEN’S JEANS</h5>
+                                            <ul class="product-block">
+                                                <li><a href="">Shop All Men’s Jeans</a></li>
+                                                <li><a href="">Straight Jeans</a></li>
+                                                <li><a href="">Regular Jeans</a></li>
+                                                <li><a href="">Bootcut Jeans</a></li>
+                                                <li><a href="">Skinny Jeans</a></li>
+                                                <li><a href="">Slim Jeans</a></li>
+                                                <li><a href="">Loose Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                        </div>
+                                        <div class="sub-menu-block">
+                                            <h5 class="name-product-block">STYLES WE LOVE</h5>
+                                            <ul class="product-block">
+                                                <li><a href="">Shop All Men’s Jeans</a></li>
+                                                <li><a href="">Straight Jeans</a></li>
+                                                <li><a href="">Regular Jeans</a></li>
+                                                <li><a href="">Bootcut Jeans</a></li>
+                                                <li><a href="">Skinny Jeans</a></li>
+                                                <li><a href="">Slim Jeans</a></li>
+                                                <li><a href="">Loose Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 column-between">
+                                        <h5 class="name-product-block">MEN’S CLOTHES</h5>
+                                        <ul class="product-block">
+                                            <li><a href="">Shop All Men’s Jeans</a></li>
+                                            <li><a href="">Straight Jeans</a></li>
+                                            <li><a href="">Regular Jeans</a></li>
+                                            <li><a href="">Bootcut Jeans</a></li>
+                                            <li><a href="">Skinny Jeans</a></li>
+                                            <li><a href="">Slim Jeans</a></li>
+                                            <li><a href="">Loose Jeans</a></li>
+                                            <li><a href="">Taper Jeans</a></li>
+                                            <li><a href="">Taper Jeans</a></li>
+                                            <li><a href="">Taper Jeans</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4 column-right">
+                                        <div class="sub-menu-block">
+                                            <h5 class="name-product-block">MEN’S COLLECTIONS</h5>
+                                            <ul class="product-block">
+                                                <li><a href="">Shop All Men’s Jeans</a></li>
+                                                <li><a href="">Straight Jeans</a></li>
+                                                <li><a href="">Regular Jeans</a></li>
+                                                <li><a href="">Bootcut Jeans</a></li>
+                                                <li><a href="">Skinny Jeans</a></li>
+                                                <li><a href="">Slim Jeans</a></li>
+                                                <li><a href="">Loose Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                        </div>
+                                        <div class="sub-menu-block">
+                                            <ul class="product-block">
+                                                <li>
+                                                    <a href="" class="product-item-bold">Jeans Guide</a>
+                                                    <i class=" ti-hand-point-left"></i>
+                                                </li>
+                                                <li><a href="" class="product-item-bold">Straight Jeans</a>
+                                                    <i class="ti-hand-point-left"></i>
+                                                </li>
+                                                <li><a href="" class="product-item-bold">Regular Jeans</a>
+                                                    <i class="ti-hand-point-left"></i>
+                                                </li>
+                                                <li><a href="" class="product-item-bold">Bootcut Jeans</a>
+                                                    <i class="ti-hand-point-left"></i>
+                                                </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subMenu__body" id="womenMenu">
+                            <ul class="highlight-sub-menu">
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                        </svg>
+                                        <h3>Women's New Arrival</h3>
+                                    </a>
+                                </li>
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
+                                        </svg>
+                                        <h3>Women's Bestsellers</h3>
+                                    </a>
+                                </li>
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                        </svg>
+                                        <h3>Collection & Collabs</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="sub-menu-containner grid wide">
+                                <div class="row">
+                                    <div class="col l-4 column-left">
+                                        <div class="sub-menu-block">
+                                            <h5 class="name-product-block">WOMEN’S JEANS</h5>
+                                            <ul class="product-block">
+                                                <li><a href="">Shop All Men’s Jeans</a></li>
+                                                <li><a href="">Straight Jeans</a></li>
+                                                <li><a href="">Regular Jeans</a></li>
+                                                <li><a href="">Bootcut Jeans</a></li>
+                                                <li><a href="">Skinny Jeans</a></li>
+                                                <li><a href="">Slim Jeans</a></li>
+                                                <li><a href="">Loose Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                        </div>
+                                        <div class="sub-menu-block">
+                                            <h5 class="name-product-block">STYLES WE LOVE</h5>
+                                            <ul class="product-block">
+                                                <li><a href="">Shop All Women’s Jeans</a></li>
+                                                <li><a href="">Straight Jeans</a></li>
+                                                <li><a href="">Regular Jeans</a></li>
+                                                <li><a href="">Bootcut Jeans</a></li>
+                                                <li><a href="">Skinny Jeans</a></li>
+                                                <li><a href="">Slim Jeans</a></li>
+                                                <li><a href="">Loose Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 column-between">
+                                        <h5 class="name-product-block">WOMEN’S CLOTHES</h5>
+                                        <ul class="product-block">
+                                            <li><a href="">Shop All Women’s Jeans</a></li>
+                                            <li><a href="">Straight Jeans</a></li>
+                                            <li><a href="">Regular Jeans</a></li>
+                                            <li><a href="">Bootcut Jeans</a></li>
+                                            <li><a href="">Skinny Jeans</a></li>
+                                            <li><a href="">Slim Jeans</a></li>
+                                            <li><a href="">Loose Jeans</a></li>
+                                            <li><a href="">Taper Jeans</a></li>
+                                            <li><a href="">Taper Jeans</a></li>
+                                            <li><a href="">Taper Jeans</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4 column-right">
+                                        <div class="sub-menu-block">
+                                            <h5 class="name-product-block">WOMEN’S COLLECTIONS</h5>
+                                            <ul class="product-block">
+                                                <li><a href="">Shop All Women’s Jeans</a></li>
+                                                <li><a href="">Straight Jeans</a></li>
+                                                <li><a href="">Regular Jeans</a></li>
+                                                <li><a href="">Bootcut Jeans</a></li>
+                                                <li><a href="">Skinny Jeans</a></li>
+                                                <li><a href="">Slim Jeans</a></li>
+                                                <li><a href="">Loose Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                                <li><a href="">Taper Jeans</a></li>
+                                        </div>
+                                        <div class="sub-menu-block">
+                                            <ul class="product-block">
+                                                <li>
+                                                    <a href="" class="product-item-bold">Jeans Guide</a>
+                                                    <i class=" ti-hand-point-left"></i>
+                                                </li>
+                                                <li><a href="" class="product-item-bold">Straight Jeans</a>
+                                                    <i class="ti-hand-point-left"></i>
+                                                </li>
+                                                <li><a href="" class="product-item-bold">Regular Jeans</a>
+                                                    <i class="ti-hand-point-left"></i>
+                                                </li>
+                                                <li><a href="" class="product-item-bold">Bootcut Jeans</a>
+                                                    <i class="ti-hand-point-left"></i>
+                                                </li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subMenu__body" id="accessoriesMenu">
+                            <ul class="highlight-sub-menu">
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                        </svg>
+                                        <h3>Men's New Arrival</h3>
+                                    </a>
+                                </li>
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
+                                        </svg>
+                                        <h3>Women's New Arrival</h3>
+                                    </a>
+                                </li>
+                                <li class="highlight__item">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                            <path
+                                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                        </svg>
+                                        <h3>Collection & Collabs</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="sub-menu-containner grid wide">
+                                <div class="row">
+                                    <div class="col l-4 column-left">
+                                        <div class="sub-menu-block">
+                                            <h5 class="name-product-block">ACCESSORIES COLLECTION</h5>
+                                            <ul class="product-block">
+                                                <li><a href="">Shop All Accessories</a></li>
+                                                <li><a href="">Belts</a></li>
+                                                <li><a href="">Bags</a></li>
+                                                <li><a href="">Hats</a></li>
+                                                <li><a href="">Underwear</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 column-between">
+                                    </div>
+                                    <div class="col l-4 column-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subMenu__body" id="discoverMenu">
+                            <div class="sub-menu-containner grid wide">
+                                <div class="row">
+                                    <div class="col l-4 column-left">
+                                        <div class="sub-menu-block">
+                                            <ul class="product-block">
+                                                <li><a href="">Red Tab<sup>™</sup> Program</a></li>
+                                                <li><a href="">Blog: Off the Cuff</a></li>
+                                                <li><a href="">Customise</a></li>
+                                                <li><a href="LevisTailorShop.html">Tailor Shop</a></li>
+                                                <li><a href="">Denim Care</a></li>
+                                                <li><a href="">Sustainability</a></li>
+                                                <li><a href="">Jeans Guide</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col l-4 column-between">
+                                    </div>
+                                    <div class="col l-4 column-right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+            <!-- bên phải -->
+            <div class="search__right">
+                <search class="search__bar">
+                    <i class="icon search__bar-icon ti-search"></i>
+                    <form action="" class="search__bar-input-wrap">
+                        <input style="z-index: 0;" type="" class="search__bar-input"
+                            placeholder="What are you looking for?" />
+                        <div class="search__bar-history">
+                            <h3 class="search__bar-history-heading">Search history</h3>
+                            <ul class="search__bar-history-list">
+                                <li class="search__bar-history-item">
+                                    <a href="">Polo shirt</a>
+                                </li>
+                            </ul>
+                            <ul class="search__bar-history-list">
+                                <li class="search__bar-history-item">
+                                    <a href="">jean</a>
+                                </li>
+                            </ul>
+                            <ul class="search__bar-history-list">
+                                <li class="search__bar-history-item">
+                                    <a href="">Short</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </search>
+                <div class="search__bell search__bell--has-notify">
+                    <!-- <i class="icon ti-bell"></i> -->
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416l400 0c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4l0-25.4c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112l0 25.4c0 47.9 13.9 94.6 39.7 134.6L72.3 368C98.1 328 112 281.3 112 233.4l0-25.4c0-61.9 50.1-112 112-112zm64 352l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                    </svg>
+                    <div class="search__bell-wrap">
+                        <header class="search__bell-header">
+                            <h3>New notification</h3>
+                        </header>
+                        <ul class="search__bell-list">
+                            <li class="search__bell-item">
+                                <a href="" class="search__bell-link">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lubj5xjukky9ae_tn.webp"
+                                        alt="" class="search__bell-img" />
+                                    <div class="search__bell-info">
+                                        <span class="search__bell-name">Big Sale – Enjoy Discounts of Up to 50% on
+                                            All Your
+                                            Favorite Styles!</span>
+                                        <span class="search__bell-discription">Hurry up and close the order before
+                                            the promotion
+                                            ends</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="search__bell-item">
+                                <a href="" class="search__bell-link">
+                                    <img src="data:image/png;base64,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"
+                                        alt="" class="search__bell-img" />
+                                    <div class="search__bell-info">
+                                        <span class="search__bell-name">FREESHIP 24H</span>
+                                        <span class="search__bell-discription">Hurry up and close the order before
+                                            the promotion
+                                            ends</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="search__bell-item search__bell-item--viewed">
+                                <a href="" class="search__bell-link">
+                                    <img src="data:image/jpeg;base64,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"
+                                        class="search__bell-img" alt="" />
+                                    <div class="search__bell-info">
+                                        <span class="search__bell-name">End of Season Sale – Refresh Your Wardrobe
+                                            at
+                                            Unbelievable Prices!</span>
+                                        <span class="search__bell-discription">End of Season Sale – Refresh Your
+                                            Wardrobe at
+                                            Unbelievable Prices! Flash Sale – Don’t Miss Out on
+                                            These Incredible Deals, Only for Today!Flash Sale –
+                                            Don’t Miss Out on These Incredible Deals, Only for
+                                            Today!</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <footer class="search__bell-footer">
+                            <a href="" class="search__bell-footer-btn">SEE ALL</a>
+                        </footer>
+                    </div>
+                </div>
+                <!-- cart layout -->
+                <div class="search__cart">
+                    <i class="icon search__cart-icon ti-shopping-cart"></i>
+                    <!-- tạo số lượng trong giỏ hangf-->
+                    <span class="cart-count-bubble">3</span>
+                    <div class="search__cart-wrap">
+                        <!-- no cart -->
+                        <div class="search__cart-list">
+                            <img src="/assets/images/no_cart.png" alt="" class="search__cart-list--no-cart-img">
+                            <p class="search__cart-list--no-cart-msg">No product</p>
+                        </div>
+                        <!-- has cart -->
+                        <div class="search__cart-list--has-cart">
+                            <i class="cart__close-icon fa-solid fa-x"></i>
+                            <h3 class="cart__header">
+                                YOUR BAG
+                                <i class="cart__header-iconpayment fa-regular fa-credit-card"></i>
+                            </h3>
+                            <div class="cart__body">
+                                <table class="cart-items" role="table">
+                                    <thead role="rowgroup">
+                                        <thead role="rowgroup">
+                                            <tr role="row">
+                                                <th id="ColumnProductImage" role="columnheader">
+                                                    <!-- <span class="visually-hidden">Product image</span> -->
+                                                </th>
+                                                <th id="ColumnProduct" class="caption" scope="col" role="columnheader">
+                                                    Product
+                                                </th>
+                                                <th id="ColumnTotal" class="right caption" scope="col"
+                                                    role="columnheader">
+                                                    Total
+                                                </th>
+                                                <th id="ColumnQuantity" role="columnheader">
+                                                    <!-- <span class="visually-hidden">Quantity</span> -->
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="cart__footer">
+                                <div class="cart__footer-totals">
+                                    <div class="totals__total">Total</div>
+                                    <div class="totals__money">
+                                        <div class="totals__money-value">3,370.00</div>
+                                        <i class="totals__money-bath fa-solid fa-baht-sign"></i>
+                                    </div>
+                                </div>
+                                <!-- CTAs -->
+                                <div class="cart__ctas">
+                                    <div class="view__cart">View Cart</div>
+                                    <button class="cart__checkout-btn">Check out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END HEADER SEARCH -->
+    </div>
+    <div class="chat-app">
+        <button class="btn-chat-app">
+
+            <svg class="open-chat-app open" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg" data-spec="button-icon" __source="[object Object]">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4 9.78374C4 5.84433 4.81543 5 8.62 5H11.38C15.1846 5 16 5.84433 16 9.78374C16 13.7232 15.1846 14.9008 11.38 14.9008H10.8303C10.8025 14.9346 10.7703 14.9666 10.7336 14.9962L8.54286 16.86C8.12929 17.1935 7.5137 16.898 7.5137 16.3667V14.87C4.65254 14.6884 4 13.3078 4 9.78374ZM10 10.6667C10.3682 10.6667 10.6667 10.3682 10.6667 10C10.6667 9.63181 10.3682 9.33333 10 9.33333C9.63181 9.33333 9.33333 9.63181 9.33333 10C9.33333 10.3682 9.63181 10.6667 10 10.6667ZM13.3333 10C13.3333 10.3682 13.0349 10.6667 12.6667 10.6667C12.2985 10.6667 12 10.3682 12 10C12 9.63181 12.2985 9.33333 12.6667 9.33333C13.0349 9.33333 13.3333 9.63181 13.3333 10ZM7.33333 10.6667C7.70152 10.6667 8 10.3682 8 10C8 9.63181 7.70152 9.33333 7.33333 9.33333C6.96514 9.33333 6.66667 9.63181 6.66667 10C6.66667 10.3682 6.96514 10.6667 7.33333 10.6667Z"
+                    fill="white"></path>
+            </svg>
+
+            <svg class="close-chat-app" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path fill="white"
+                    d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+            </svg>
+        </button>
+        <div class="chat-app-wrap" id="chat-app-wrap">
+            <div class="welcome">
+                <div class="block-one">
+                    <h3>Chat with us</h3>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 208c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-176c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 272c0 1.5 0 3.1 .1 4.6L67.6 283c-16-15.2-41.3-14.6-56.6 1.4s-14.6 41.3 1.4 56.6L124.8 448c43.1 41.1 100.4 64 160 64l19.2 0c97.2 0 176-78.8 176-176l0-208c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-176c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 176c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-208z" />
+                        </svg>
+                        Hi, message us with any questions. We're happy to help!
+                    </p>
+                    <div class="block-two">
+                        <div class="block-two-wrap">
+                            <textarea name="" id="" placeholder="Write message" rows="3" cols="100"></textarea>
+                            <button class="btn-send-msg icon-disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                    data-spec="send-icon" __source="[object Object]">
+                                    <path
+                                        d="M0.956867 0.188759C1.31353 -0.0449367 1.789 -0.0631242 2.16599 0.142509L18.666 9.14251C18.9973 9.32323 19.2001 9.64874 19.2001 10C19.2001 10.3513 18.9973 10.6768 18.666 10.8575L2.16599 19.8575C1.789 20.0631 1.31353 20.0449 0.956867 19.8112C0.600207 19.5775 0.43087 19.1732 0.526243 18.7831L2.42877 11L8.3 11C8.85229 11 9.3 10.5523 9.3 10C9.3 9.44772 8.85229 9 8.3 9L2.42877 9L0.526243 1.21693C0.43087 0.826771 0.600207 0.422456 0.956867 0.188759Z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="block-four" style="display: none;">
+                        <button>Return to chat</button>
+                    </div>
+                </div>
+                <div class="block-three">
+                    <h3>Instant answers</h3>
+                    <div class="btn-wrap">
+                        <button class="btn-track-order">Track my order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- chat app tin nhắn  chưa xong  -->
+            <div class="message" style="display: none;">
+                <div class="header">
+                    <i class="ti-arrow-left"></i>
+                    <h3>Levi's<sup>®</sup> Thailand</h3>
+                </div>
+                <div class="body">
+                    <div class="block-two">
+                        <div class="block-two-wrap">
+                            <textarea name="" id="" placeholder="Write message" rows="3" cols="100"></textarea>
+                            <button class="add-img">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" />
+                                </svg>
+                            </button>
+                            <button class="btn-send-msg icon-disabled">
+                                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                    data-spec="send-icon" __source="[object Object]">
+                                    <path
+                                        d="M0.956867 0.188759C1.31353 -0.0449367 1.789 -0.0631242 2.16599 0.142509L18.666 9.14251C18.9973 9.32323 19.2001 9.64874 19.2001 10C19.2001 10.3513 18.9973 10.6768 18.666 10.8575L2.16599 19.8575C1.789 20.0631 1.31353 20.0449 0.956867 19.8112C0.600207 19.5775 0.43087 19.1732 0.526243 18.7831L2.42877 11L8.3 11C8.85229 11 9.3 10.5523 9.3 10C9.3 9.44772 8.85229 9 8.3 9L2.42877 9L0.526243 1.21693C0.43087 0.826771 0.600207 0.422456 0.956867 0.188759Z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/modules/header.js"></script>
+        <!-- <script src="/assets/js/modules/subMenu.js"></script> -->
+    </div>
+</body>
+
+</html>

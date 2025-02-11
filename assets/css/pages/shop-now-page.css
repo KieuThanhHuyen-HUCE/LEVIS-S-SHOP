@@ -1,0 +1,121 @@
+.levis{
+    text-align: center;
+}
+.breadcrumb{
+    margin: 20px 0 20px;
+}
+#content h1{
+    margin-bottom: 80px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.breadcrumb li+li::before{
+    content: "/\00a0";
+    padding: 0 5px;
+}
+.breadcrumb{
+    display: inline-flex;
+    /* align-items: center; */
+    list-style: none;
+}
+.breadcrumb li a{
+    color: black;
+    font-size: 16px;
+}
+.breadcrumb li:last-child{
+    color: rgb(54, 54, 54);
+    font-size: 14px;
+}
+.bg source img{
+    width: 100%;
+}
+.facet-vertical-form{
+    padding: 20px 50px;
+    font-size: 14px;
+}
+.facet-vertical-form, .facet__left, .facet__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;  
+}
+.facet__left{
+    flex: 2.6;
+}
+.facet__right{
+    justify-content: flex-end;
+    flex: 8;
+}
+.facet__filter{
+    display: inline-flex;
+    align-items: center;
+}
+.facet__filter i{
+    margin-right: 10px;
+}
+.select__body {
+    font-size: 11px;
+}
+/*  */  
+.category__list{
+    font-size: 16px;
+    overflow-y: scroll;
+}
+.category__list details summary{
+    list-style: none;
+    display: flex;
+    padding: 15px 0;
+    border-top: 1px solid var(--border-color);
+    font-weight: bolder;
+    position: relative;
+
+}
+details  summary::before {
+    content: "+"; /* Dấu cộng */
+    position: absolute;
+    right: 20px; /* Điều chỉnh khoảng cách icon */
+}
+details[open] summary::before {
+    content: "-"; /* Dấu trừ khi mở */
+}
+.sub-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+}
+.sub-item{
+    margin-right: auto;
+    padding: 15px 0;
+    font-size: 14px;
+}
+.text-banner{
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    font-weight: 450;
+    margin: 20px 0;
+}
+.banner__title{
+    margin: 10px 20px 80px;
+}
+.banner__menu{
+    display: flex;
+    flex: 0 0 50%;
+    width: 100%;
+
+}
+.banner-wrap{
+    padding: 50px 35px;
+}
+.banner__item{
+    width: 50%;
+
+}
+.banner__media img{
+    width: 100%;
+}
+.title,.desc{
+    font-weight: bolder;
+    color: white;
+}

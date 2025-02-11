@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang đăng nhập</title>
+  <!-- LINK ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
+  <!-- ĐỂ LINK FILE CSS -->
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/components/header-footer.css">
+  <link rel="stylesheet" href="/assets/css/components/user-sign-up.css">
+</head>
+
+<body>
+  <div class="levis">
+    <div id="userSignup" class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__body">
+        <div class="user-signup">
+          <div class="close-wrap">
+            <i class=" close-wrap__btn ti-close"></i>
+          </div>
+          <div class="user-signup__container">
+            <div class="user-signup__header">
+              <img
+                src="//cdn.shopify.com/extensions/be768ef4-bc99-4a7b-83d6-33509d6b2f0c/0.0.0/assets/LRT_Vertical_Black_200.png"
+                width="150" height="152" loading="eager" class="login-logo" />
+              <h2 class="user-signup__h2">
+                FREE TO JOIN. <br />
+                OPEN TO ALL.
+              </h2>
+              <h2 class="user-signup__h3">Log in or sign up for Levi's® Red Tab™</h2>
+
+              <p class="user-signup__header-text">
+                Please provide your mobile number or email address to log in or sign up.
+                Please enter a valid mobile number or email. To register/log in using
+                phone number, please do not enter the country code (66) and remove 0
+                first digit.
+              </p>
+            </div>
+            <!-- phần form để nhập input -->
+            <div class="user-signup__form">
+              <!-- trang đăng nhập gồm user-signup có sdt mail-->
+              <div class="user-signup__group">
+                <input type="text" class="user-signup__input" placeholder="Mobile Number / Email*" />
+              </div>
+              <!-- phần nút đăng kí đăng nhập, return -->
+              <div class="user-signup__controls">
+                <button class="btn btn--primary btn-disabled">CONTINUE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

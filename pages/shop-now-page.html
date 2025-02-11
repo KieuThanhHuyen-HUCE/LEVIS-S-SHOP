@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png"
+        href="//levi.co.th/cdn/shop/files/levis-logo-new-colour.svg?v=1701758773&amp;width=600" />
+    <title>Document</title>
+    <!-- <base href="http://127.0.0.1:58190/"> -->
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+
+    <!-- link CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ĐỂ LINK FILE CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/pages/shop-now-page.css">
+    <!-- <link rel="stylesheet" href="./assets/css/ListProduct.css"> -->
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="levis">
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Levi's<sup>®</sup></a></li>
+            <li>UNDERCOVER</li>
+        </ul>
+        <h1>SHOP LEVI’S® X UNDERCOVER</h1>
+        <div class="bg">
+            <picture>
+                <source media="(max-width: 768px)"
+                    srcset="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_PLPHeaderBanner_1600x900_cb4f2048-48e7-4443-9ff2-de1ae8f056e3.webp?v=1736826907">
+                <img src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_PLPHeaderBanner_1600x900_cb4f2048-48e7-4443-9ff2-de1ae8f056e3.webp?v=1736826907"
+                    style="width: 100%;">
+            </picture>
+        </div>
+        <div class="facet-vertical-form">
+            <div class="facet__left">
+                <div class="facet__filter">
+                    <i class="ti-view-list-alt"></i>
+                    <h3>Filter</h3>
+                </div>
+                <div class="select">
+                    <label for="select" class="select__header"> Sort by:</label>
+                    <select name="select__body" id="select">
+                        <option value="">Featured</option>
+                        <option value="">Best selling</option>
+                        <option value="">Price, low to high</option>
+                        <option value="">Price, high to low</option>
+                        <option value="">Product, old to new</option>
+                        <option value="">Product, new to old</option>
+                    </select>
+                </div>
+            </div>
+            <div class="facet__right">
+                <h3 class="count-product">
+                    <span id="ProductCount" class="loading">7 products</span>
+                </h3>
+            </div>
+
+        </div>
+        <div class="grid wide" style="padding: 0 20px">
+            <div class=" row">
+                <div class="col l-3 m-3 c-3">
+                    <div class="category__list">
+                        <details>
+                            <summary>Product Type</summary>
+                            <ul class="sub-menu">
+                                <li class="sub-item">
+                                    <input type="checkbox">
+                                    Men Denim Jackets & Outerwear <span class="count">(4)</span>
+                                </li>
+                                <li class="sub-item">
+                                    <input type="checkbox">
+                                    Men Tees & Polos <span class="count">(3)</span>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Product Type</summary>
+                            <ul class="sub-menu">
+                                <li class="sub-item">
+                                    <input type="checkbox">
+                                    Men Denim Jackets & Outerwear <span class="count">(4)</span>
+                                </li>
+                                <li class="sub-item">
+                                    <input type="checkbox">
+                                    Men Tees & Polos <span class="count">(3)</span>
+                                </li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Product Type</summary>
+                            <ul class="sub-menu">
+                                <li class="sub-item">
+                                    <input type="checkbox">
+                                    Men Denim Jackets & Outerwear <span class="count">(4)</span>
+                                </li>
+                                <li class="sub-item">
+                                    <input type="checkbox">
+                                    Men Tees & Polos <span class="count">(3)</span>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+                <div class="col l-9 m-9 c-9">
+                    <div class="banner__title">
+                        <p class="text-banner">Levi’s® and UNDERCOVER join forces once again for a new collection,
+                            blending UNDERCOVER’s
+                            bold aesthetic with timeless Levi’s® staples to celebrate the 35th anniversary of Jun
+                            Takahashi’s epochal label. Featuring a range of thoughtfully designed pieces drawing
+                            inspiration from both brand’s rich heritage and archive.</p>
+                        <p class="text-banner">Available for purchase exclusively online and in-store at Levi’s®
+                            Central
+                            World, ICONSIAM,
+                            EmSphere, Chidlom and Siam Paragon.</p>
+                    </div>
+                    <div class="banner__menu grid wide"
+                        style="background-image: url(https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_CarouselBG_Desktop.webp?v=1736826908);">
+                        <div class="row banner-wrap">
+                            <div class="banner__item col l-6">
+                                <div class="banner__media">
+                                    <img alt="" loading="lazy"
+                                        src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_Carousel_CardA.webp?v=1736826906">
+                                </div>
+                                <div class="title">HIGH-CONCEPT ELEGANCE, RAW-EDGED REBELLION</div>
+                                <p class="desc">The Pinnacle Type II Trucker Jackets, offered in selvedge indigo
+                                    denim &
+                                    black corduroy, feature detachable components referencing UNDERCOVER’s
+                                    ‘Exchange’
+                                    Program from their AW98 collection.</p>
+                            </div>
+                            <div class="banner__item col l-6">
+                                <div class="banner__media">
+                                    <img alt="" loading="lazy"
+                                        src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_Carousel_CardA.webp?v=1736826906">
+                                </div>
+                                <div class="title">HIGH-CONCEPT ELEGANCE, RAW-EDGED REBELLION</div>
+                                <p class="desc">The Pinnacle Type II Trucker Jackets, offered in selvedge indigo
+                                    denim &
+                                    black corduroy, feature detachable components referencing UNDERCOVER’s
+                                    ‘Exchange’
+                                    Program from their AW98 collection.</p>
+                            </div>
+                            <div class="banner__item col l-6">
+                                <div class="banner__media">
+                                    <img alt="" loading="lazy"
+                                        src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_Carousel_CardA.webp?v=1736826906">
+                                </div>
+                                <div class="title">HIGH-CONCEPT ELEGANCE, RAW-EDGED REBELLION</div>
+                                <p class="desc">The Pinnacle Type II Trucker Jackets, offered in selvedge indigo
+                                    denim &
+                                    black corduroy, feature detachable components referencing UNDERCOVER’s
+                                    ‘Exchange’
+                                    Program from their AW98 collection.</p>
+                            </div>
+                        </div>
+                        <div class="banner-wrap" style="display: none;">
+                            <div class="banner__item">
+                                <div class="banner__media">
+                                    <img alt="" loading="lazy"
+                                        src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_Carousel_CardA.webp?v=1736826906">
+                                </div>
+                                <div class="title">HIGH-CONCEPT ELEGANCE, RAW-EDGED REBELLION</div>
+                                <p class="desc">The Pinnacle Type II Trucker Jackets, offered in selvedge indigo
+                                    denim &
+                                    black corduroy, feature detachable components referencing UNDERCOVER’s
+                                    ‘Exchange’
+                                    Program from their AW98 collection.</p>
+                            </div>
+                            <div class="banner__item">
+                                <div class="banner__media">
+                                    <img alt="" loading="lazy"
+                                        src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_Carousel_CardA.webp?v=1736826906">
+                                </div>
+                                <div class="title">HIGH-CONCEPT ELEGANCE, RAW-EDGED REBELLION</div>
+                                <p class="desc">The Pinnacle Type II Trucker Jackets, offered in selvedge indigo
+                                    denim &
+                                    black corduroy, feature detachable components referencing UNDERCOVER’s
+                                    ‘Exchange’
+                                    Program from their AW98 collection.</p>
+                            </div>
+                            <div class="banner__item">
+                                <div class="banner__media">
+                                    <img alt="" loading="lazy"
+                                        src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_Carousel_CardA.webp?v=1736826906">
+                                </div>
+                                <div class="title">HIGH-CONCEPT ELEGANCE, RAW-EDGED REBELLION</div>
+                                <p class="desc">The Pinnacle Type II Trucker Jackets, offered in selvedge indigo
+                                    denim &
+                                    black corduroy, feature detachable components referencing UNDERCOVER’s
+                                    ‘Exchange’
+                                    Program from their AW98 collection.</p>
+                            </div>
+                            <div class="banner__item">
+                                <div class="banner__media">
+                                    <img alt="" loading="lazy"
+                                        src="https://cdn.shopify.com/s/files/1/0637/1423/0450/files/2501_SEA_PLP_06_Levis-x-Undercover_Carousel_CardA.webp?v=1736826906">
+                                </div>
+                                <div class="title">HIGH-CONCEPT ELEGANCE, RAW-EDGED REBELLION</div>
+                                <p class="desc">The Pinnacle Type II Trucker Jackets, offered in selvedge indigo
+                                    denim &
+                                    black corduroy, feature detachable components referencing UNDERCOVER’s
+                                    ‘Exchange’
+                                    Program from their AW98 collection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/header.js"></script>
+
+</body>
+
+</html>

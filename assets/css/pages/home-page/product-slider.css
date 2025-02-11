@@ -1,0 +1,135 @@
+/* phaanf colection */
+.Colection{
+    margin: 32px 0;
+}
+.header-colection{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+    padding: 30px 60px 50px;
+
+}
+.header-text-h1{
+    font-size: var(--fs-26);
+    font-weight: 1000;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+.header-text{
+    display: flex;
+    justify-content: center;
+}
+.header-colection span{
+    width: 21%;
+}
+.view-all{
+    display: flex;
+    text-decoration: none;
+    width: 21%;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--text-color);
+    font-size: var(--fs-14);
+    cursor: pointer;
+}
+.view-all i{
+    padding-left: 5px;
+}
+.view-all span{
+    text-decoration: underline;
+    text-wrap: nowrap;
+}
+.ti-angle-right{
+    font-size: 12px;
+}
+/* BEGIN LIST COLECTION */
+.list-colection{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(180px, 1fr));
+    grid-gap: 32px;
+    transition: transform 0.4s ease-in-out;
+    overflow-x: auto;
+    padding: 0 15px;
+    grid-auto-flow: column;  
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
+
+    /* Ẩn thanh cuộn trên trình duyệt Webkit (Chrome, Safari) */
+    scrollbar-width: none; /* Ẩn trên Firefox */
+    -ms-overflow-style: none; /* Ẩn trên IE/Edge */
+    will-change: transform;
+    -webkit-overflow-scrolling: touch; /* Cho mượt trên iOS */
+}
+.list-colection .item{
+        min-width: 200px; 
+        flex: 0 0 auto; 
+}
+.list-colection .item a{
+    text-decoration: none;
+
+}
+.list-colection .item a .info .name{
+    white-space: normal;
+    display: block; 
+}
+.imageProductItem{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+.list-colection .item .info{
+    font-size: 15px;
+    color: var(--black-color);
+    display: block;
+}
+.list-colection .item .info .price{
+    font-weight: bolder;
+    display: block;
+    padding: 10px 0;
+}
+/* slider btn */
+.Colection .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Colection .button svg{
+    width: 40px;
+    height: 16px;
+    cursor: pointer;
+}
+.disable-icon{
+    fill: #9f9d9d;
+    position: relative;
+    cursor: none;
+}
+.disable-notify{
+    position: absolute;
+    fill: rgb(171, 1, 1);
+    display: none;
+}
+/* đang sai  */
+.disable-icon:hover .disable-notify {
+    display: block;
+}
+  /* MOBILE */
+@media (max-width: 739px) {
+}
+/* TABLET */
+@media (min-width: 740px) {
+}
+/* PC medium resolution > */
+@media (min-width: 1113px)and (max-width: 1280px) {
+}
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+}
+/* END RESPONSIVE  */
